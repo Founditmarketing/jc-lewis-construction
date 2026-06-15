@@ -1,0 +1,56 @@
+# Page Concrete and Outdoor Services
+
+Page Concrete and Outdoor Services is a premium, top-rated concrete contractor in High Point, NC, serving the Triad region with over 30 years of experience. They deliver high-quality residential and commercial concrete solutions, utilizing premium mixes, structural reinforcements, and advanced curing techniques.
+
+- **Website URL**: https://www.pageconcretenc.com
+- **Phone**: (336) 962-7934
+- **Email**: info@pageconcretenc.com
+- **Locations Served**: High Point, Greensboro, Winston-Salem, Kernersville, Summerfield, Oak Ridge, Jamestown, and surrounding areas in the Triad region.
+- **Accreditation**: A+ rated with the Better Business Bureau (BBB)
+
+## Core Services
+
+### Custom Driveways
+Engineered to withstand heavy vehicle loads, freeze-thaw cycles, and years of use.
+- High-PSI concrete mix
+- Rebar & wire mesh reinforcement
+- Proper control joint installation
+- Expert grading and site preparation
+
+### Stamped & Decorative Concrete
+Premium finishes replicating natural stone, brick, slate, or wood textures at an affordable cost.
+- Integrated color matching
+- Custom patterns and textures
+- Specialized sealants (high-gloss or matte)
+- Slip-resistant additives for safety
+
+### Patios & Outdoor Living
+Custom-designed backyards, patios, steps, fire pit areas, and outdoor kitchen foundations.
+- Custom shapes and contours
+- Seamless transition from home interiors
+- Durable and weather-resistant flatwork
+
+### Commercial Flatwork
+Large-scale commercial projects built to strict local building codes and structural requirements.
+- Warehouse floors and slabs
+- ADA-compliant access ramps and sidewalks
+- Heavy-duty loading docks
+- Parking lots and industrial walkways
+
+## Key Pages
+- **Home**: https://www.pageconcretenc.com/ - Overview of the company, quick stats, and gallery highlights.
+- **Services**: https://www.pageconcretenc.com/services/:id - Individual service breakdowns.
+- **Service Areas**: https://www.pageconcretenc.com/service-areas - Interactive map and listed service cities.
+  - **High Point**: https://www.pageconcretenc.com/service-areas/high-point
+  - **Winston-Salem**: https://www.pageconcretenc.com/service-areas/winston-salem
+  - **Greensboro**: https://www.pageconcretenc.com/service-areas/greensboro
+  - **Kernersville**: https://www.pageconcretenc.com/service-areas/kernersville
+  - **Thomasville**: https://www.pageconcretenc.com/service-areas/thomasville
+  - **Clemmons**: https://www.pageconcretenc.com/service-areas/clemmons
+  - **Bermuda Run**: https://www.pageconcretenc.com/service-areas/bermuda-run
+  - **Lewisville**: https://www.pageconcretenc.com/service-areas/lewisville
+  - **Mocksville**: https://www.pageconcretenc.com/service-areas/mocksville
+- **FAQs**: https://www.pageconcretenc.com/faqs - Frequently asked questions on concrete installation, curing, and maintenance.
+- **Gallery**: https://www.pageconcretenc.com/gallery - Interactive showcase of past residential and commercial projects.
+- **Reviews**: https://www.pageconcretenc.com/reviews - Customer testimonials and ratings.
+- **Contact**: https://www.pageconcretenc.com/contact - Free estimate and quote request form.

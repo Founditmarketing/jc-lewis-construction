@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #697566;
+  --color-secondary: #8a9987;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+button {
+  border-radius: 0;
+}
+
+input, textarea, select {
+  border-radius: 0;
+}
+
+@media (max-width: 1023px) {
+  body {
+    padding-bottom: 62px;
+  }
+}
+
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
