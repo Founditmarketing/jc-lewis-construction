@@ -107,68 +107,71 @@ export default function ServicePage() {
         </div>
       </div>
 
-      <section className="py-24 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-stone-50/50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none" />
-        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-slate-200/50 rounded-full blur-3xl translate-y-1/3 -translate-x-1/3 pointer-events-none" />
+      <section className="py-24">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+          {/* Text content */}
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            key={`text-${service.title}`}
+            className="mb-12"
+          >
+            <h2 className="text-3xl font-black text-slate-900 uppercase mb-6">Uncompromising Quality</h2>
+            <p className="text-lg text-slate-600 mb-5 leading-relaxed">
+              {service.paragraphs[0]}
+            </p>
+            <p className="text-base text-slate-500 leading-relaxed">
+              {service.paragraphs[1]}
+            </p>
+          </motion.div>
 
-            {/* Service image */}
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.2 }}
-              key={service.image}
-              className="relative rounded-3xl overflow-hidden shadow-2xl h-[500px] w-full lg:sticky lg:top-32"
-            >
-              <img
-                src={service.image}
-                alt={service.title}
-                className="absolute inset-0 w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-3xl" />
-            </motion.div>
+          {/* Features card */}
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+            key={`features-${service.title}`}
+            className="bg-white p-8 rounded-2xl shadow-xl border border-slate-100 mb-12"
+          >
+            <h3 className="text-xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+              <span className="w-8 h-8 rounded-full bg-stone-100 text-primary flex items-center justify-center shrink-0">★</span>
+              Features &amp; Details
+            </h3>
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {service.features.map((feature, idx) => (
+                <li key={idx} className="flex items-start gap-3">
+                  <CheckCircle2 className="text-primary shrink-0 mt-0.5" size={20} />
+                  <span className="text-slate-700 font-medium">{feature}</span>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
 
-            {/* Service details */}
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.3 }}
-              key={`text-${service.title}`}
-            >
-              <h2 className="text-3xl font-black text-slate-900 uppercase mb-6">Uncompromising Quality</h2>
+          {/* Landscape image */}
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
+            key={service.image}
+            className="relative w-full aspect-[16/9] rounded-3xl overflow-hidden shadow-2xl mb-12"
+          >
+            <img
+              src={service.image}
+              alt={service.title}
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-3xl" />
+          </motion.div>
 
-              <p className="text-lg text-slate-600 mb-5 leading-relaxed">
-                {service.paragraphs[0]}
-              </p>
-              <p className="text-base text-slate-500 mb-8 leading-relaxed">
-                {service.paragraphs[1]}
-              </p>
-
-              <div className="bg-white p-8 rounded-2xl shadow-xl border border-slate-100 mb-10">
-                <h3 className="text-xl font-bold text-slate-900 mb-6 flex items-center gap-2">
-                  <span className="w-8 h-8 rounded-full bg-stone-100 text-primary flex items-center justify-center shrink-0">★</span>
-                  Features &amp; Details
-                </h3>
-                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start gap-3">
-                      <CheckCircle2 className="text-primary shrink-0 mt-0.5" size={20} />
-                      <span className="text-slate-700 font-medium">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <Link to="/contact">
-                <button className="bg-primary text-white font-bold text-lg py-4 px-8 rounded-xl hover:bg-[#4d574b] transition-all shadow-xl active:scale-[0.98] flex items-center gap-2 group cursor-pointer inline-flex">
-                  Request a Free Estimate
-                  <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
-                </button>
-              </Link>
-            </motion.div>
-          </div>
+          {/* CTA */}
+          <Link to="/contact">
+            <button className="bg-primary text-white font-bold text-lg py-4 px-8 rounded-xl hover:bg-[#4d574b] transition-all shadow-xl active:scale-[0.98] flex items-center gap-2 group cursor-pointer inline-flex">
+              Request a Free Estimate
+              <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
+            </button>
+          </Link>
         </div>
       </section>
 
