@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import { SERVICE_AREAS } from '../data/serviceAreas';
 import { useSiteReady } from '../context/SiteReadyContext';
 
-const NAV_ITEMS = ['Home', 'Services', 'Gallery', 'Service Area', 'Leave A Review', 'Contact'];
+const NAV_ITEMS = ['Home', 'About', 'Services', 'Gallery', 'Service Area', 'Leave A Review', 'Contact'];
 
 const DRAWER_HEX_BG = `url("data:image/svg+xml,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="52" height="90"><path d="M26,0 L52,15 L52,45 L26,60 L0,45 L0,15 Z M26,60 L26,90" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="0.8"/></svg>')}")`;
 
@@ -37,6 +37,7 @@ const SERVICES_MEGA = [
 ];
 
 function navPath(item: string) {
+  if (item === 'About') return '/about';
   if (item === 'Gallery') return '/gallery';
   if (item === 'Contact') return '/contact';
   if (item === 'Service Area') return '/service-areas';

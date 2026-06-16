@@ -7,6 +7,7 @@ import ContactPage from './pages/ContactPage';
 import ServicePage from './pages/ServicePage';
 import ServiceAreaPage from './pages/ServiceAreaPage';
 import ServiceAreaCityPage from './pages/ServiceAreaCityPage';
+import AboutPage from './pages/AboutPage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import TermsPage from './pages/TermsPage';
 import FatFooter from './components/FatFooter';
@@ -36,6 +37,7 @@ export default function App() {
           <UltraHeader />
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<AboutPage />} />
             <Route path="/services/:id" element={<ServicePage />} />
             <Route path="/service-area" element={<ServiceAreaPage />} />
             <Route path="/service-areas" element={<ServiceAreaPage />} />
