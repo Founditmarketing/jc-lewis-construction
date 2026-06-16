@@ -109,9 +109,9 @@ export default function UltraHeader() {
                     <Phone size={13} />
                     <span>(254) 332-1303</span>
                   </a>
-                  <a href="mailto:info@jandclewisconstructiongroup.com" className="hidden sm:flex items-center gap-2 hover:text-white/80 transition-colors tracking-wide">
+                  <a href="mailto:john.jandclewis@gmail.com" className="hidden sm:flex items-center gap-2 hover:text-white/80 transition-colors tracking-wide">
                     <Mail size={13} />
-                    <span>info@jandclewisconstructiongroup.com</span>
+                    <span>john.jandclewis@gmail.com</span>
                   </a>
                 </div>
                 <div className="flex items-center gap-2 tracking-wide">
@@ -417,9 +417,9 @@ export default function UltraHeader() {
                     <Phone size={14} className="text-primary flex-shrink-0" />
                     (254) 332-1303
                   </a>
-                  <a href="mailto:info@jandclewisconstructiongroup.com" className="flex items-start gap-3 text-white/55 hover:text-white transition-colors text-xs font-medium">
+                  <a href="mailto:john.jandclewis@gmail.com" className="flex items-start gap-3 text-white/55 hover:text-white transition-colors text-xs font-medium">
                     <Mail size={14} className="text-primary flex-shrink-0 mt-0.5" />
-                    info@jandclewisconstructiongroup.com
+                    john.jandclewis@gmail.com
                   </a>
                 </div>
                 <Link

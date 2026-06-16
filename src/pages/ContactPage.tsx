@@ -126,7 +126,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-slate-900 mb-1">Email Address</h3>
-                    <a href="mailto:info@jandclewisconstructiongroup.com" className="text-lg text-slate-600 hover:text-primary transition-colors font-medium">info@jandclewisconstructiongroup.com</a>
+                    <a href="mailto:john.jandclewis@gmail.com" className="text-lg text-slate-600 hover:text-primary transition-colors font-medium">john.jandclewis@gmail.com</a>
                   </div>
                 </div>
 

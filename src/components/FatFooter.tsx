@@ -156,10 +156,10 @@ export default function FatFooter() {
                   <div className="min-w-0">
                     <p className="text-white font-semibold mb-1">Email</p>
                     <a
-                      href="mailto:info@jandclewisconstructiongroup.com"
+                      href="mailto:john.jandclewis@gmail.com"
                       className="text-slate-400 hover:text-white transition-colors break-all text-sm"
                     >
-                      info@jandclewisconstructiongroup.com
+                      john.jandclewis@gmail.com
                     </a>
                   </div>
                 </li>
