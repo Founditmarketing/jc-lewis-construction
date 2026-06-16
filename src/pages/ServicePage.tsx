@@ -8,7 +8,7 @@ const servicesData = {
   'custom-metal-fences': {
     title: 'Custom Metal Fences',
     subtitle: 'Protecting property boundaries with precision and longevity',
-    image: '/jclewis-fence.png',
+    image: '/Custom%20Metal%20Fences.webp',
     paragraphs: [
       'Protecting property boundaries with precision and longevity is our focus when fabricating custom metal fences for homeowners and businesses in Bellmead, TX. At J & C Lewis Construction Group, we combine 35 years of experience with advanced metal work to create fences from aluminum, stainless steel, or iron that match blueprints, CAD files, or a customer sketch. We handle cutting, bending, and forming in-house and offer welding services, including MIG, TIG, and stick, to ensure every joint meets structural expectations while serving residential, commercial, and industrial clients.',
       'Our crews manage projects from initial design through installation and can start with prebuilt components or fabricate from scratch to fit landscaping and security needs. We can also fabricate and install metal patios, patio covers, and provide carport installation to create functional outdoor spaces while maintaining strong structural integrity. We provide free estimates for fence contracts and can produce one-off prototypes or small-batch runs depending on the scope. Choose a local Bellmead, TX fabricator that delivers robust custom metal fences with certified welding and full construction capabilities — request a free estimate now and schedule an on-site consultation with J & C Lewis Construction Group to secure your property.',
@@ -27,7 +27,7 @@ const servicesData = {
   'custom-metal-gates': {
     title: 'Custom Metal Gates',
     subtitle: 'Crafting ornate entryways and secure perimeter access',
-    image: '/jclewis-gate.png',
+    image: '/Custom%20Metal%20Gates.webp',
     paragraphs: [
       'Crafting ornate entryways and secure perimeter access, we specialize in custom metal gates tailored for style, durability, and smooth operation for properties in Bellmead, TX. J & C Lewis Construction Group works from customer designs, blueprints, or CAD files to build gates in iron, stainless steel, or aluminum, integrating decorative elements and structural reinforcement. Our metal work process includes precise cutting, forming, and finishing, and we coordinate subcontractors when projects require electrical operators, masonry pillars, or matching railings to meet residential, commercial, and industrial needs.',
       'We have 6 years in business, backed by decades of staff experience, and offer prototyping as well as larger production runs for developments. For projects needing coordination with landscaping or concrete work, we handle the scheduling and on-site assembly while ensuring ornamental ironwork details are installed to specification. Our team also provides professional welding services to guarantee strong, durable joints that support long-term performance. Protect your property with a gate that complements your architecture and stands up to daily use — request a personalized estimate from J & C Lewis Construction Group and book your start date today.',
@@ -46,7 +46,7 @@ const servicesData = {
   'ornamental-ironwork': {
     title: 'Ornamental Ironwork',
     subtitle: 'Elevating entrances, stairways, and decorative features',
-    image: '/jclewis-ironwork.png',
+    image: '/Ornamental%20Ironwork.webp',
     paragraphs: [
       'Elevating entrances, stairways, and decorative features, our ornamental ironwork services bring bespoke metal artistry to renovation and construction projects across Bellmead, TX. At J & C Lewis Construction Group, we fabricate railings, stairs, handrails, and decorative panels in iron and stainless steel, creating architectural elements that combine durability with refined design. Our team also crafts custom metal gates that complement these iron features while enhancing both security and curb appeal. Every component is carefully measured and fabricated to integrate seamlessly with surrounding structures and landscaping.',
       'Our professional welding services ensure that each piece is built with strong, precise joints that meet structural expectations and long-term performance standards. Whether producing elegant balustrades, decorative panels, or functional entry features, we focus on quality craftsmanship and attention to detail. We also offer remodeling services for properties that require new ironwork to match or enhance existing finishes. For a free estimate and a tailored ornamental ironwork proposal, contact J & C Lewis Construction Group today to schedule a site review and design consultation.',
