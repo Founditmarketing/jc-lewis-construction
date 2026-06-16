@@ -266,20 +266,17 @@ export default function ContactWidget() {
           {/* Call */}
           <a
             href="tel:254-332-1303"
-            className="flex-1 flex flex-col items-center justify-center gap-2 py-3.5 group active:bg-white/5 transition-colors"
+            className="flex-1 flex items-center justify-center py-3 group active:bg-white/5 transition-colors"
           >
             <div className="w-9 h-9 rounded-full border border-white/20 bg-white/[0.06] flex items-center justify-center group-active:bg-primary/25 transition-colors">
               <Phone size={17} className="text-primary" strokeWidth={1.5} />
             </div>
-            <span className="text-white/45 text-[9px] font-bold uppercase tracking-[0.18em] group-active:text-white/80 transition-colors">
-              Call
-            </span>
           </a>
 
           {/* Message */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="flex-1 flex flex-col items-center justify-center gap-2 py-3.5 border-x border-white/[0.06] relative transition-colors active:bg-white/5 cursor-pointer"
+            className="flex-1 flex items-center justify-center py-3 border-x border-white/[0.06] relative transition-colors active:bg-white/5 cursor-pointer"
           >
             {isOpen && (
               <span className="absolute top-0 inset-x-0 h-[2px] bg-primary" />
@@ -293,11 +290,6 @@ export default function ContactWidget() {
                 strokeWidth={1.5}
               />
             </div>
-            <span className={`text-[9px] font-bold uppercase tracking-[0.18em] transition-colors ${
-              isOpen ? 'text-white' : 'text-white/45'
-            }`}>
-              Message
-            </span>
           </button>
 
           {/* Address */}
@@ -305,14 +297,11 @@ export default function ContactWidget() {
             href="https://maps.google.com/?q=Bellmead,+TX+76705"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 flex flex-col items-center justify-center gap-2 py-3.5 group active:bg-white/5 transition-colors"
+            className="flex-1 flex items-center justify-center py-3 group active:bg-white/5 transition-colors"
           >
             <div className="w-9 h-9 rounded-full border border-white/20 bg-white/[0.06] flex items-center justify-center group-active:bg-primary/25 transition-colors">
               <MapPin size={17} className="text-primary" strokeWidth={1.5} />
             </div>
-            <span className="text-white/45 text-[9px] font-bold uppercase tracking-[0.18em] group-active:text-white/80 transition-colors">
-              Address
-            </span>
           </a>
         </div>
       </div>
