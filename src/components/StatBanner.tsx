@@ -36,7 +36,7 @@ function CountUp({ end, suffix = '', duration = 1600, started }: {
 
 const statItems: StatItem[] = [
   { end: 35, suffix: '+', display: null, label: 'Years Experience' },
-  { end: 3, suffix: '', display: null, label: 'Core Services' },
+  { end: null, suffix: '', display: '24/7', label: 'Availability' },
   { end: 100, suffix: '%', display: null, label: 'Satisfaction Rate' },
   { end: null, suffix: '', display: 'Free', label: 'Estimates' },
 ];
