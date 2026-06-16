@@ -5,9 +5,6 @@
   --color-secondary: #8a9987;
 }
 
-html {
-  scroll-behavior: smooth;
-}
 
 h1, h2, h3 {
   font-family: 'Barlow Condensed', sans-serif;
@@ -33,4 +30,26 @@ input, textarea, select {
 @keyframes marquee-scroll {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
+}
+
+.btn-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+.btn-shimmer::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    transparent 35%,
+    rgba(255, 255, 255, 0.22) 50%,
+    transparent 65%
+  );
+  transform: translateX(-100%) skewX(-15deg);
+  transition: transform 0.55s ease;
+  pointer-events: none;
+}
+.btn-shimmer:hover::after {
+  transform: translateX(220%) skewX(-15deg);
 }

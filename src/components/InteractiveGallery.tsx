@@ -50,7 +50,7 @@ export default function InteractiveGallery() {
           </div>
           <Link
             to="/gallery"
-            className="inline-flex items-center gap-2 bg-primary text-white font-bold text-sm tracking-widest uppercase px-8 py-4 self-start md:self-end transition-colors duration-200 hover:bg-[#4d574b]"
+            className="inline-flex items-center gap-2 bg-primary text-white font-bold text-sm tracking-widest uppercase px-8 py-4 self-start md:self-end border border-transparent hover:bg-[#1e2820] hover:scale-[1.02] hover:border-white/25 transition-all duration-300 btn-shimmer"
           >
             View All Projects <ArrowUpRight size={14} />
           </Link>

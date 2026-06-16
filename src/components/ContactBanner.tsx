@@ -165,7 +165,7 @@ export default function ContactBanner() {
                 <button
                   type="submit"
                   disabled={status === 'submitting'}
-                  className="w-full md:w-auto bg-primary hover:bg-[#4d574b] text-white font-black text-lg py-5 px-10 rounded-2xl transition-colors duration-200 cursor-pointer whitespace-nowrap tracking-wide disabled:opacity-70 disabled:cursor-not-allowed flex items-center gap-3"
+                  className="w-full md:w-auto bg-primary hover:bg-[#1e2820] hover:scale-[1.03] text-white font-black text-lg py-5 px-10 rounded-2xl border border-transparent hover:border-white/25 transition-all duration-300 cursor-pointer whitespace-nowrap tracking-wide disabled:opacity-70 disabled:cursor-not-allowed flex items-center gap-3 btn-shimmer"
                 >
                   {status === 'submitting' ? (
                     <>

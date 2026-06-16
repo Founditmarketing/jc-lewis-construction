@@ -6,12 +6,14 @@ import ContactBanner from '../components/ContactBanner';
 import LegacyAbout from '../components/LegacyAbout';
 import InteractiveGallery from '../components/InteractiveGallery';
 import InteractiveMapSection from '../components/InteractiveMapSection';
+import SpecializationsBanner from '../components/SpecializationsBanner';
 
 export default function HomePage() {
   return (
     <main>
       <Hero />
       <FlexExpandServices />
+      <SpecializationsBanner />
       <MissionStatement />
       <StatBanner />
       <ContactBanner />

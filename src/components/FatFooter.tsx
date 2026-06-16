@@ -5,6 +5,8 @@ import { motion, AnimatePresence } from 'motion/react';
 
 type FooterStatus = 'idle' | 'submitting' | 'success' | 'error';
 
+const HEX_BG = `url("data:image/svg+xml,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="52" height="90"><path d="M26,0 L52,15 L52,45 L26,60 L0,45 L0,15 Z M26,60 L26,90" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="0.8"/></svg>')}")`;
+
 const SOCIAL_LINKS = [
   {
     label: 'Facebook',
@@ -30,15 +32,7 @@ const SOCIAL_LINKS = [
   {
     label: 'Yelp',
     href: 'https://www.yelp.com/biz/j-and-c-lewis-construction-group-waco',
-    icon: (
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-        <rect x="10.2" y="2.5" width="3.6" height="8" rx="1.8" transform="rotate(0 12 12)" />
-        <rect x="10.2" y="2.5" width="3.6" height="8" rx="1.8" transform="rotate(72 12 12)" />
-        <rect x="10.2" y="2.5" width="3.6" height="8" rx="1.8" transform="rotate(144 12 12)" />
-        <rect x="10.2" y="2.5" width="3.6" height="8" rx="1.8" transform="rotate(216 12 12)" />
-        <rect x="10.2" y="2.5" width="3.6" height="8" rx="1.8" transform="rotate(288 12 12)" />
-      </svg>
-    ),
+    icon: <img src="/yelp.png" alt="Yelp" width="16" height="16" className="object-contain" />,
   },
 ];
 
@@ -93,8 +87,9 @@ export default function FatFooter() {
   };
 
   return (
-    <footer className="bg-[#1e2820] text-slate-300 pt-28 pb-12 border-t border-white/10">
-      <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
+    <footer className="relative bg-[#1e2820] text-slate-300 pt-28 pb-12 border-t border-white/10 overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: HEX_BG, backgroundRepeat: 'repeat' }} />
+      <div className="relative z-[1] max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
 
         <div className="flex flex-col lg:flex-row gap-16 mb-24">
 
@@ -133,7 +128,6 @@ export default function FatFooter() {
                   { name: 'Home', path: '/' },
                   { name: 'Services', path: '/#services' },
                   { name: 'Project Gallery', path: '/gallery' },
-                  { name: 'FAQs', path: '/faqs' },
                   { name: 'Contact', path: '/contact' },
                 ].map((link) => (
                   <li key={link.name}>
@@ -300,7 +294,7 @@ export default function FatFooter() {
                 <button
                   type="submit"
                   disabled={status === 'submitting'}
-                  className="bg-primary text-white font-bold px-5 py-4 hover:bg-[#4d574b] transition-colors duration-200 cursor-pointer mt-1 tracking-wide disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                  className="bg-primary text-white font-bold px-5 py-4 border border-transparent hover:bg-[#1e2820] hover:scale-[1.02] hover:border-white/25 transition-all duration-300 cursor-pointer mt-1 tracking-wide disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2 btn-shimmer"
                 >
                   {status === 'submitting' ? (
                     <>

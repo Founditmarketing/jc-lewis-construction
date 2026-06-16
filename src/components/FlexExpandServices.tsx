@@ -55,6 +55,7 @@ export default function FlexExpandServices() {
                   key={service.id}
                   className="group cursor-pointer py-5 lg:py-6"
                   onMouseEnter={() => setActiveIndex(index)}
+                  onClick={() => setActiveIndex(index)}
                 >
                   <div className="flex items-start justify-between gap-6">
                     <div className="flex-1">
@@ -73,6 +74,13 @@ export default function FlexExpandServices() {
                             transition={{ duration: 0.35, ease: [0.25, 1, 0.5, 1] }}
                             className="overflow-hidden"
                           >
+                            <div className="lg:hidden mt-4 mb-4 overflow-hidden rounded-xl aspect-[16/9]">
+                              <img
+                                src={service.image}
+                                alt={service.title}
+                                className="w-full h-full object-cover"
+                              />
+                            </div>
                             <p className="text-slate-500 text-sm leading-relaxed mt-3 mb-4 max-w-md">
                               {service.description}
                             </p>

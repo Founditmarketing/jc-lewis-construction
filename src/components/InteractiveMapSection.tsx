@@ -14,8 +14,8 @@ const createIcon = (isHub: boolean, isSelected: boolean) => L.divIcon({
 });
 
 const CITIES = [
-  { id: 'Waco', position: [31.5493, -97.1467] as [number, number], isHub: true, desc: 'Our home base and central dispatch.', zoom: 12 },
-  { id: 'Bellmead', position: [31.6054, -97.1314] as [number, number], desc: 'Our business headquarters — local service, personal attention.', zoom: 13 },
+  { id: 'Bellmead', position: [31.6054, -97.1314] as [number, number], isHub: true, desc: 'Our business headquarters — local service, personal attention.', zoom: 13 },
+  { id: 'Waco', position: [31.5493, -97.1467] as [number, number], isHub: false, desc: 'Our home base and central dispatch.', zoom: 12 },
   { id: 'Austin', position: [30.2672, -97.7431] as [number, number], desc: 'Serving the greater Austin metro area.', zoom: 10 },
   { id: 'Collin', position: [33.1972, -96.6397] as [number, number], desc: 'Serving the Collin County area and surrounding communities.', zoom: 11 },
   { id: 'Corsicana', position: [32.0956, -96.4689] as [number, number], desc: 'Extended service for Corsicana projects.', zoom: 11 },
