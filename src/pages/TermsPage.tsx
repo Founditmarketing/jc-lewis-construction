@@ -1,15 +1,20 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FileText, ArrowLeft } from 'lucide-react';
+import PageSEO from '../components/PageSEO';
 
 export default function TermsPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = 'Terms of Service | J & C Lewis Construction Group';
   }, []);
 
   return (
     <main className="bg-slate-50 min-h-screen">
+      <PageSEO
+        title="Terms of Service | J & C Lewis Construction Group"
+        description="Read the terms of service governing use of the J & C Lewis Construction Group website."
+        path="/terms"
+      />
       {/* Hero banner */}
       <section className="bg-[#1e2820] pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-5" style={{ backgroundImage: 'radial-gradient(circle at 30% 50%, #2563EB 0%, transparent 60%), radial-gradient(circle at 70% 50%, #1E40AF 0%, transparent 60%)' }} />
@@ -45,7 +50,7 @@ export default function TermsPage() {
           <TermsSection number="1" title="Agreement to Terms">
             <p>
               These Terms govern your access to and use of our website,{' '}
-              <a href="https://www.jandclewisconstructiongroup.com" className="text-primary hover:underline">jandclewisconstructiongroup.com</a>,
+              <a href="https://www.jandclewisconstruction.com" className="text-primary hover:underline">jandclewisconstruction.com</a>,
               and any services provided by J & C Lewis Construction Group, including but not limited to concrete work, outdoor construction, and related services.
             </p>
             <p className="mt-3">
@@ -220,7 +225,7 @@ export default function TermsPage() {
             <ul className="mt-3 space-y-2">
               <li>
                 <span className="font-semibold text-slate-800">Website: </span>
-                <a href="https://www.jandclewisconstructiongroup.com" className="text-primary hover:underline">jandclewisconstructiongroup.com</a>
+                <a href="https://www.jandclewisconstruction.com" className="text-primary hover:underline">jandclewisconstruction.com</a>
               </li>
               <li>
                 <span className="font-semibold text-slate-800">Phone: </span>

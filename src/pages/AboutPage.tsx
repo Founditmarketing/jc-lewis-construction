@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
 import SpecializationsBanner from '../components/SpecializationsBanner';
+import PageSEO from '../components/PageSEO';
 
 const capabilities = [
   'Custom Metal Fences & Gates',
@@ -26,6 +27,11 @@ export default function AboutPage() {
 
   return (
     <main className="min-h-screen bg-slate-50">
+      <PageSEO
+        title="About Us | J & C Lewis Construction Group"
+        description="35 years of combined experience in custom metalwork. Learn about J & C Lewis Construction Group, based in Bellmead, TX."
+        path="/about"
+      />
 
       {/* Dark hero banner */}
       <div className="bg-slate-950 pt-48 md:pt-56 pb-24 px-4 relative overflow-hidden">

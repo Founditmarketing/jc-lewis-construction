@@ -1,15 +1,20 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ShieldCheck, ArrowLeft } from 'lucide-react';
+import PageSEO from '../components/PageSEO';
 
 export default function PrivacyPolicyPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = 'Privacy Policy | J & C Lewis Construction Group';
   }, []);
 
   return (
     <main className="bg-slate-50 min-h-screen">
+      <PageSEO
+        title="Privacy Policy | J & C Lewis Construction Group"
+        description="Read the privacy policy for J & C Lewis Construction Group, covering how we collect, use, and protect your information."
+        path="/privacy-policy"
+      />
       {/* Hero banner */}
       <section className="bg-[#1e2820] pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-5" style={{ backgroundImage: 'radial-gradient(circle at 30% 50%, #2563EB 0%, transparent 60%), radial-gradient(circle at 70% 50%, #1E40AF 0%, transparent 60%)' }} />
@@ -39,7 +44,7 @@ export default function PrivacyPolicyPage() {
         <div className="bg-white rounded-3xl shadow-sm border border-slate-100 p-8 md:p-14 space-y-12 text-slate-700 leading-relaxed">
 
           <p className="text-lg text-slate-600 leading-relaxed border-l-4 border-primary pl-6">
-            J & C Lewis Construction Group ("Company," "we," "our," or "us") respects your privacy and is committed to protecting it through this Privacy Policy. This policy describes the types of information we may collect from you or that you may provide when you visit our website: <a href="https://www.jandclewisconstructiongroup.com" className="text-primary hover:underline">jandclewisconstructiongroup.com</a>, and our practices for collecting, using, maintaining, protecting, and disclosing that information.
+            J & C Lewis Construction Group ("Company," "we," "our," or "us") respects your privacy and is committed to protecting it through this Privacy Policy. This policy describes the types of information we may collect from you or that you may provide when you visit our website: <a href="https://www.jandclewisconstruction.com" className="text-primary hover:underline">jandclewisconstruction.com</a>, and our practices for collecting, using, maintaining, protecting, and disclosing that information.
           </p>
 
           <PolicySection number="1" title="Information We Collect">
@@ -167,7 +172,7 @@ export default function PrivacyPolicyPage() {
             <ul className="mt-3 space-y-2">
               <li>
                 <span className="font-semibold text-slate-800">Website: </span>
-                <a href="https://www.jandclewisconstructiongroup.com" className="text-primary hover:underline">jandclewisconstructiongroup.com</a>
+                <a href="https://www.jandclewisconstruction.com" className="text-primary hover:underline">jandclewisconstruction.com</a>
               </li>
               <li>
                 <span className="font-semibold text-slate-800">Phone: </span>

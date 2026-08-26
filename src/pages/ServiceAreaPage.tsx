@@ -5,6 +5,8 @@ import { MapContainer, TileLayer, Marker, Popup, Circle } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { CheckCircle2, MapPin } from 'lucide-react';
+import { SERVICE_AREAS } from '../data/serviceAreas';
+import PageSEO from '../components/PageSEO';
 
 const createIcon = (isHub: boolean) => L.divIcon({
   className: 'bg-transparent',
@@ -14,17 +16,13 @@ const createIcon = (isHub: boolean) => L.divIcon({
   popupAnchor: [0, isHub ? -14 : -10]
 });
 
-const CITIES = [
-  { id: 'Waco / Bellmead', position: [31.5493, -97.1467] as [number, number], isHub: true, desc: "Our HQ and central dispatch." },
-  { id: 'Temple', position: [31.0981, -97.3428] as [number, number], desc: "Fast response times for Temple projects." },
-  { id: 'Austin', position: [30.2672, -97.7431] as [number, number], desc: "Serving the greater Austin metro area." },
-  { id: 'Dallas', position: [32.7767, -96.7970] as [number, number], desc: "DFW and surrounding communities." },
-  { id: 'Fort Worth', position: [32.7555, -97.3308] as [number, number], desc: "Custom metalwork across Fort Worth." },
-  { id: 'Corsicana', position: [32.0956, -96.4689] as [number, number], desc: "Extended service for Corsicana." },
-  { id: 'Gatesville', position: [31.4357, -97.7436] as [number, number], desc: "Serving the Gatesville area." },
-  { id: 'McGregor', position: [31.4360, -97.3994] as [number, number], desc: "Custom metalwork for McGregor residents." },
-  { id: 'Odessa', position: [31.8457, -102.3676] as [number, number], desc: "Extended coverage for the Permian Basin." },
-];
+const CITIES = SERVICE_AREAS.map((area) => ({
+  id: area.name,
+  slug: area.slug,
+  position: area.mapPosition,
+  isHub: area.isHub,
+  desc: area.description,
+}));
 
 export default function ServiceAreaPage() {
   const centerPosition: [number, number] = [31.5493, -97.8000];
@@ -35,6 +33,11 @@ export default function ServiceAreaPage() {
 
   return (
     <main className="min-h-screen bg-slate-50 pb-0">
+      <PageSEO
+        title="Service Areas | J & C Lewis Construction Group"
+        description="J & C Lewis Construction Group serves Bellmead, Waco, Temple, Austin, Dallas, Fort Worth, Corsicana & communities across Texas with custom metalwork."
+        path="/service-areas"
+      />
       {/* Dark hero banner */}
       <div className="bg-slate-950 pt-48 md:pt-56 pb-16 px-4 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/jclewis-hero1.png')] bg-cover bg-center opacity-20"></div>
@@ -102,7 +105,7 @@ export default function ServiceAreaPage() {
                   <li key={city.id} className="flex items-center gap-3 group">
                     <CheckCircle2 className="text-primary shrink-0" size={24} />
                     <Link
-                      to="/contact"
+                      to={`/service-areas/${city.slug}`}
                       className="text-slate-800 font-bold text-lg hover:text-primary transition-colors group-hover:translate-x-1 transition-transform inline-flex items-center"
                     >
                       {city.id}

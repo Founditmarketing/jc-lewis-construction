@@ -4,6 +4,9 @@ import { motion } from 'motion/react';
 import { CheckCircle2, ArrowRight, Phone } from 'lucide-react';
 import { SERVICE_AREAS } from '../data/serviceAreas';
 import SpecializationsBanner from '../components/SpecializationsBanner';
+import PageSEO from '../components/PageSEO';
+import JsonLd from '../components/JsonLd';
+import { BUSINESS } from '../data/business';
 
 const SERVICES = [
   {
@@ -32,15 +35,33 @@ export default function ServiceAreaCityPage() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    if (city) {
-      document.title = `Metal Fences & Gates in ${city.name}, TX | J & C Lewis Construction Group`;
-    }
   }, [city]);
 
   if (!city) return <Navigate to="/service-areas" replace />;
 
+  const citySchema = {
+    '@context': 'https://schema.org',
+    '@type': 'HomeAndConstructionBusiness',
+    name: BUSINESS.name,
+    telephone: BUSINESS.telephone,
+    email: BUSINESS.email,
+    address: BUSINESS.address,
+    areaServed: {
+      '@type': 'City',
+      name: city.name,
+      containedInPlace: { '@type': 'State', name: 'Texas' },
+    },
+    url: `${BUSINESS.url}/service-areas/${city.slug}`,
+  };
+
   return (
     <main className="min-h-screen bg-slate-50">
+      <PageSEO
+        title={`Metal Fences & Gates in ${city.name}, TX | J & C Lewis Construction Group`}
+        description={`Custom metal fences, gates, and ornamental ironwork in ${city.name}, TX. ${city.description} Free estimates from J & C Lewis Construction Group.`}
+        path={`/service-areas/${city.slug}`}
+      />
+      <JsonLd data={citySchema} />
 
       {/* Hero */}
       <div className="bg-slate-950 pt-48 md:pt-56 pb-24 px-4 relative overflow-hidden">

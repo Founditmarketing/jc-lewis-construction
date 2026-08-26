@@ -1,56 +1,44 @@
-# Page Concrete and Outdoor Services
+# J & C Lewis Construction Group
 
-Page Concrete and Outdoor Services is a premium, top-rated concrete contractor in High Point, NC, serving the Triad region with over 30 years of experience. They deliver high-quality residential and commercial concrete solutions, utilizing premium mixes, structural reinforcements, and advanced curing techniques.
+J & C Lewis Construction Group is a custom metalwork contractor based in Bellmead, TX, bringing 35 years of combined experience to Central Texas and beyond. They design and fabricate custom metal fences, gates, and ornamental ironwork built to last for decades. Licensed and insured.
 
-- **Website URL**: https://www.pageconcretenc.com
-- **Phone**: (336) 962-7934
-- **Email**: info@pageconcretenc.com
-- **Locations Served**: High Point, Greensboro, Winston-Salem, Kernersville, Summerfield, Oak Ridge, Jamestown, and surrounding areas in the Triad region.
-- **Accreditation**: A+ rated with the Better Business Bureau (BBB)
+- **Website URL**: https://www.jandclewisconstruction.com
+- **Phone**: (254) 332-1303
+- **Email**: john.jandclewis@gmail.com
+- **Address**: Bellmead, TX 76705
+- **Locations Served**: Bellmead, Waco, Temple, Austin, Dallas, Fort Worth, Corsicana, Gatesville, McGregor, Odessa, Collin County, and surrounding areas across Texas.
 
 ## Core Services
 
-### Custom Driveways
-Engineered to withstand heavy vehicle loads, freeze-thaw cycles, and years of use.
-- High-PSI concrete mix
-- Rebar & wire mesh reinforcement
-- Proper control joint installation
-- Expert grading and site preparation
+### Custom Metal Fences
+Precision-built metal fencing that combines security with style — designed and fabricated to exact specifications, built to protect and impress for decades.
 
-### Stamped & Decorative Concrete
-Premium finishes replicating natural stone, brick, slate, or wood textures at an affordable cost.
-- Integrated color matching
-- Custom patterns and textures
-- Specialized sealants (high-gloss or matte)
-- Slip-resistant additives for safety
+### Custom Metal Gates
+Custom metal gates designed for strength and curb appeal, crafted to complement the property and stand up to daily use at every entrance.
 
-### Patios & Outdoor Living
-Custom-designed backyards, patios, steps, fire pit areas, and outdoor kitchen foundations.
-- Custom shapes and contours
-- Seamless transition from home interiors
-- Durable and weather-resistant flatwork
-
-### Commercial Flatwork
-Large-scale commercial projects built to strict local building codes and structural requirements.
-- Warehouse floors and slabs
-- ADA-compliant access ramps and sidewalks
-- Heavy-duty loading docks
-- Parking lots and industrial walkways
+### Ornamental Ironwork
+Handcrafted ornamental ironwork that elevates any space — from decorative railings to intricate architectural details, fusing artistry with structural integrity.
 
 ## Key Pages
-- **Home**: https://www.pageconcretenc.com/ - Overview of the company, quick stats, and gallery highlights.
-- **Services**: https://www.pageconcretenc.com/services/:id - Individual service breakdowns.
-- **Service Areas**: https://www.pageconcretenc.com/service-areas - Interactive map and listed service cities.
-  - **High Point**: https://www.pageconcretenc.com/service-areas/high-point
-  - **Winston-Salem**: https://www.pageconcretenc.com/service-areas/winston-salem
-  - **Greensboro**: https://www.pageconcretenc.com/service-areas/greensboro
-  - **Kernersville**: https://www.pageconcretenc.com/service-areas/kernersville
-  - **Thomasville**: https://www.pageconcretenc.com/service-areas/thomasville
-  - **Clemmons**: https://www.pageconcretenc.com/service-areas/clemmons
-  - **Bermuda Run**: https://www.pageconcretenc.com/service-areas/bermuda-run
-  - **Lewisville**: https://www.pageconcretenc.com/service-areas/lewisville
-  - **Mocksville**: https://www.pageconcretenc.com/service-areas/mocksville
-- **FAQs**: https://www.pageconcretenc.com/faqs - Frequently asked questions on concrete installation, curing, and maintenance.
-- **Gallery**: https://www.pageconcretenc.com/gallery - Interactive showcase of past residential and commercial projects.
-- **Reviews**: https://www.pageconcretenc.com/reviews - Customer testimonials and ratings.
-- **Contact**: https://www.pageconcretenc.com/contact - Free estimate and quote request form.
+- **Home**: https://www.jandclewisconstruction.com/ - Overview of the company, services, and gallery highlights.
+- **About**: https://www.jandclewisconstruction.com/about - Company history and experience.
+- **Services**: https://www.jandclewisconstruction.com/services/:id - Individual service breakdowns.
+  - **Custom Metal Fences**: https://www.jandclewisconstruction.com/services/custom-metal-fences
+  - **Custom Metal Gates**: https://www.jandclewisconstruction.com/services/custom-metal-gates
+  - **Ornamental Ironwork**: https://www.jandclewisconstruction.com/services/ornamental-ironwork
+- **Service Areas**: https://www.jandclewisconstruction.com/service-areas - Map and listed service cities.
+  - **Bellmead**: https://www.jandclewisconstruction.com/service-areas/bellmead
+  - **Waco**: https://www.jandclewisconstruction.com/service-areas/waco
+  - **Temple**: https://www.jandclewisconstruction.com/service-areas/temple
+  - **Austin**: https://www.jandclewisconstruction.com/service-areas/austin
+  - **Dallas**: https://www.jandclewisconstruction.com/service-areas/dallas
+  - **Fort Worth**: https://www.jandclewisconstruction.com/service-areas/fort-worth
+  - **Corsicana**: https://www.jandclewisconstruction.com/service-areas/corsicana
+  - **Gatesville**: https://www.jandclewisconstruction.com/service-areas/gatesville
+  - **McGregor**: https://www.jandclewisconstruction.com/service-areas/mcgregor
+  - **Odessa**: https://www.jandclewisconstruction.com/service-areas/odessa
+  - **Collin County**: https://www.jandclewisconstruction.com/service-areas/collin-county
+- **Gallery**: https://www.jandclewisconstruction.com/gallery - Showcase of past projects.
+- **FAQs**: https://www.jandclewisconstruction.com/faqs - Frequently asked questions about custom metalwork.
+- **Reviews**: https://www.jandclewisconstruction.com/reviews - Verified client reviews.
+- **Contact**: https://www.jandclewisconstruction.com/contact - Free estimate and quote request form.

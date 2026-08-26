@@ -3,6 +3,10 @@ import { useParams, Navigate, Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
 import SpecializationsBanner from '../components/SpecializationsBanner';
+import PageSEO from '../components/PageSEO';
+import JsonLd from '../components/JsonLd';
+import { BUSINESS } from '../data/business';
+import { SERVICE_AREAS } from '../data/serviceAreas';
 
 const servicesData = {
   'custom-metal-fences': {
@@ -77,8 +81,30 @@ export default function ServicePage() {
 
   const service = servicesData[id as keyof typeof servicesData];
 
+  const serviceSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    serviceType: service.title,
+    name: service.title,
+    description: service.subtitle,
+    provider: {
+      '@type': 'HomeAndConstructionBusiness',
+      name: BUSINESS.name,
+      telephone: BUSINESS.telephone,
+      address: BUSINESS.address,
+    },
+    areaServed: SERVICE_AREAS.map((area) => area.name),
+    url: `${BUSINESS.url}/services/${id}`,
+  };
+
   return (
     <main className="min-h-screen bg-slate-50">
+      <PageSEO
+        title={`${service.title} | J & C Lewis Construction Group`}
+        description={`${service.subtitle}. Serving Bellmead, Waco & Central Texas. Request a free estimate from J & C Lewis Construction Group.`}
+        path={`/services/${id}`}
+      />
+      <JsonLd data={serviceSchema} />
       {/* Dark hero banner */}
       <div className="bg-slate-950 pt-48 md:pt-56 pb-24 px-4 relative overflow-hidden">
         <div

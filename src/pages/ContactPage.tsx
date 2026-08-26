@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Phone, Mail, MapPin, Clock, CheckCircle, Loader, AlertCircle, Send } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import PageSEO from '../components/PageSEO';
 
 type FormStatus = 'idle' | 'submitting' | 'success' | 'error';
 
@@ -72,6 +73,11 @@ export default function ContactPage() {
 
   return (
     <main className="min-h-screen bg-slate-50">
+      <PageSEO
+        title="Contact Us | J & C Lewis Construction Group"
+        description="Get a free estimate for custom metal fences, gates, or ornamental ironwork. Call (254) 332-1303 or send us a message today."
+        path="/contact"
+      />
       {/* Dark hero banner */}
       <div className="bg-slate-950 pt-48 md:pt-56 pb-24 px-4 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/jclewis-hero1.png')] bg-cover bg-center opacity-20"></div>

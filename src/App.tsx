@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, useLocation, Navigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { useLayoutEffect, useState } from 'react';
 import UltraHeader from './components/UltraHeader';
 import HomePage from './pages/HomePage';
@@ -10,6 +10,8 @@ import ServiceAreaCityPage from './pages/ServiceAreaCityPage';
 import AboutPage from './pages/AboutPage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import TermsPage from './pages/TermsPage';
+import FAQPage from './pages/FAQPage';
+import ReviewsPage from './pages/ReviewsPage';
 import FatFooter from './components/FatFooter';
 import FloatingCallButton from './components/FloatingCallButton';
 import LoadScreen from './components/LoadScreen';
@@ -43,7 +45,8 @@ export default function App() {
             <Route path="/service-areas" element={<ServiceAreaPage />} />
             <Route path="/service-areas/:slug" element={<ServiceAreaCityPage />} />
             <Route path="/gallery" element={<GalleryPage />} />
-            <Route path="/reviews" element={<Navigate to="/" replace />} />
+            <Route path="/faqs" element={<FAQPage />} />
+            <Route path="/reviews" element={<ReviewsPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
             <Route path="/terms" element={<TermsPage />} />

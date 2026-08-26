@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X, ZoomIn, ChevronLeft, ChevronRight } from 'lucide-react';
+import PageSEO from '../components/PageSEO';
 
 const images = Array.from({ length: 19 }, (_, i) => ({
   id: `${i + 1}`,
@@ -47,6 +48,11 @@ export default function GalleryPage() {
 
   return (
     <main className="min-h-screen bg-slate-50">
+      <PageSEO
+        title="Project Gallery | J & C Lewis Construction Group"
+        description="Browse our gallery of custom metal fences, gates, and ornamental ironwork projects across Bellmead, Waco & Central Texas."
+        path="/gallery"
+      />
       {/* Dark hero banner */}
       <div className="bg-slate-950 pt-48 md:pt-56 pb-24 px-4 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/jclewis-hero1.png')] bg-cover bg-center opacity-20"></div>

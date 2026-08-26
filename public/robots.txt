@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://page-concrete.vercel.app/sitemap.xml
+Sitemap: https://www.jandclewisconstruction.com/sitemap.xml

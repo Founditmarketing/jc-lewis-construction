@@ -1,8 +1,8 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { Resend } from 'resend';
 
-const TO_ADDRESS = 'info@pageconcretenc.com';
-const FROM_ADDRESS = 'hello@pageconcretenc.com'; // verified domain ✓
+const TO_ADDRESS = 'john.jandclewis@gmail.com';
+const FROM_ADDRESS = 'hello@jandclewisconstruction.com'; // verified domain ✓
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   // Only allow POST
@@ -64,7 +64,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         </table>
       </div>
       <p style="text-align: center; color: #94a3b8; font-size: 12px; margin-top: 16px;">
-        This message was sent from the Page Concrete and Outdoor Services website contact form.
+        This message was sent from the J & C Lewis Construction Group website contact form.
       </p>
     </div>
   `;

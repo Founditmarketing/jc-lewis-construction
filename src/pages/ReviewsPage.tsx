@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import { motion } from 'motion/react';
 import { Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import PageSEO from '../components/PageSEO';
 
 export default function ReviewsPage() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -36,6 +37,11 @@ export default function ReviewsPage() {
 
   return (
     <main className="min-h-screen bg-slate-50">
+      <PageSEO
+        title="Client Reviews | J & C Lewis Construction Group"
+        description="Read verified reviews from homeowners and businesses across Texas who trust J & C Lewis Construction Group for custom metalwork."
+        path="/reviews"
+      />
       {/* Dark hero banner */}
       <div className="bg-slate-950 pt-48 md:pt-56 pb-24 px-4 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/jclewis-hero1.png')] bg-cover bg-center opacity-20"></div>

@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ChevronDown } from 'lucide-react';
+import PageSEO from '../components/PageSEO';
+import JsonLd from '../components/JsonLd';
 
 const faqs = [
   {
@@ -45,6 +47,19 @@ const faqs = [
   },
 ];
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.answer,
+    },
+  })),
+};
+
 export default function FAQPage() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
@@ -58,6 +73,12 @@ export default function FAQPage() {
 
   return (
     <main className="min-h-screen bg-slate-50">
+      <PageSEO
+        title="Frequently Asked Questions | J & C Lewis Construction Group"
+        description="Answers to common questions about custom metal fences, gates, and ornamental ironwork from J & C Lewis Construction Group."
+        path="/faqs"
+      />
+      <JsonLd data={faqSchema} />
       {/* Dark hero banner */}
       <div className="bg-slate-950 pt-48 md:pt-56 pb-24 px-4 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/jclewis-hero1.png')] bg-cover bg-center opacity-20"></div>
