@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import { useLayoutEffect, useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import UltraHeader from './components/UltraHeader';
 import HomePage from './pages/HomePage';
 import GalleryPage from './pages/GalleryPage';
@@ -50,6 +51,7 @@ export default function App() {
           </Routes>
           <FatFooter />
           <FloatingCallButton />
+          <Analytics />
         </div>
       </SiteReadyCtx.Provider>
     </BrowserRouter>
